@@ -25,5 +25,52 @@ namespace Email_Tests
 
             Assert.IsFalse(result);
         }
+
+        [TestMethod]
+        public void EmailWithMultipleAtSymbols_ReturnsFalse()
+        {
+            var validator = new Email_Validator();
+
+            bool result = validator.IsValidEmail("test@@test.com");
+
+            Assert.IsFalse(result);
+        }
+        [TestMethod]
+        public void EmailWithoutDomain_ReturnsFalse()
+        {
+            var validator = new Email_Validator();
+
+            bool result = validator.IsValidEmail("test@");
+
+            Assert.IsFalse(result);
+        }
+        [TestMethod]
+        public void EmailWithoutLocalPart_ReturnsFalse()
+        {
+            var validator = new Email_Validator();
+
+            bool result = validator.IsValidEmail("@abrakadabra.com");
+
+            Assert.IsFalse(result);
+        }
+        [TestMethod]
+        public void EmailWithoutTLD_ReturnsFalse()
+        {
+            var validator = new Email_Validator();
+
+            bool result = validator.IsValidEmail("ikszde@abrakadabra");
+
+            Assert.IsFalse(result);
+        }
+
+        [TestMethod]
+        public void EmptyEmail_ReturnsFalse()
+        {
+            var validator = new Email_Validator();
+
+            bool result = validator.IsValidEmail("");
+
+            Assert.IsFalse(result);
+        }
     }
 }
