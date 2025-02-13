@@ -1,0 +1,7 @@
+C:\Users\tanulo\source\repos\EmailAndUnitTest\Email\bin\Debug\Email.exe.config
+C:\Users\tanulo\source\repos\EmailAndUnitTest\Email\bin\Debug\Email.exe
+C:\Users\tanulo\source\repos\EmailAndUnitTest\Email\bin\Debug\Email.pdb
+C:\Users\tanulo\source\repos\EmailAndUnitTest\Email\obj\Debug\Email.csprojAssemblyReference.cache
+C:\Users\tanulo\source\repos\EmailAndUnitTest\Email\obj\Debug\Email.csproj.CoreCompileInputs.cache
+C:\Users\tanulo\source\repos\EmailAndUnitTest\Email\obj\Debug\Email.exe
+C:\Users\tanulo\source\repos\EmailAndUnitTest\Email\obj\Debug\Email.pdb
